@@ -67,7 +67,7 @@ experiences:
 certifications:
   title: Проектная деятельность # The title displayed on the page will be "Проекты"
   list:
-    - name: "**- Распределенная чат-система (Go Microservices)**"
+    - name: "- Распределенная чат-система (Go Microservices)"
       organization: ""
       credentialurl: "https://github.com/Kovalyovv/chat-app"
       credentialname: "GitHub"
@@ -80,7 +80,7 @@ certifications:
         Инфраструктура и DevOps: `PostgreSQL`, `RabbitMQ`, `MinIO` полностью контейнеризированы с помощью `Docker` и `Docker Compose`.
         Observability: метрики собираются с помощью `Prometheus`, распределенные трассировки — через `OpenTelemetry` и визуализируются в **Jaeger**.
         
-    - name: "**- Packet - Full Stack Планировщик покупок (Android)**"
+    - name: "- Packet - Full Stack Планировщик покупок (Android)"
       organization: ""
       credentialurl: "https://github.com/Kovalyovv/packet-backend"
       credentialname: "Backend GitHub"
