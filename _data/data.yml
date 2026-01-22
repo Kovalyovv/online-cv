@@ -65,31 +65,38 @@ experiences:
         - Работал с PostgreSQL для хранения и извлечения логистических данных.
 
 certifications:
-  title: Проекты # The title displayed on the page will be "Проекты"
+  title: Проектная деятельность # The title displayed on the page will be "Проекты"
   list:
-    - name: Распределенная чат-система (Go Microservices)
-      organization: "Экосистема из трех микросервисов с real-time чатом, асинхронной обработкой файлов и полной наблюдаемостью."
+    - name: **- Распределенная чат-система (Go Microservices)**
+      organization: ""
       credentialurl: "https://github.com/Kovalyovv/chat-app"
       credentialname: "GitHub"
       details: |
-        Спроектировал и реализовал комплексную систему, состоящую из независимых, но взаимосвязанных сервисов:
-        - **Auth Service:** Сервис аутентификации (REST API + gRPC) для управления пользователями и валидации JWT (Access/Refresh) токенов.
+          **Экосистема из трех микросервисов с real-time чатом, асинхронной обработкой файлов и полной наблюдаемостью.**
+        - **Auth Service:** Сервис аутентификации (`REST API` + `gRPC`) для управления пользователями и валидации JWT (Access/Refresh) токенов.
         - **Chat Service:** Ядро системы, управляющее чат-комнатами и историей сообщений через WebSocket-сервер для real-time коммуникации.
-        - **Media Processor:** Асинхронный сервис для обработки файлов. Принимает загрузки по HTTP, ставит задачу в очередь **RabbitMQ**, обрабатывает ее в фоновом worker'е и уведомляет пользователя о результате через Chat Service.
-        - **Инфраструктура и DevOps:** Вся система и ее зависимости (PostgreSQL, RabbitMQ, MinIO) полностью контейнеризированы с помощью **Docker** и **Docker Compose**.
-        - **Observability:** Реализован полный стек наблюдаемости: метрики собираются с помощью **Prometheus**, распределенные трассировки — через **OpenTelemetry** и визуализируются в **Jaeger**.
-        - **Стек:** *Go, PostgreSQL, Docker, Docker Compose, gRPC, WebSockets, RabbitMQ, MinIO (S3 API), Prometheus, OpenTelemetry, Jaeger, Gin.*
-
-    - name: Packet - Full Stack Планировщик покупок (Android)
-      organization: "Android-приложение и Kotlin-бэкенд для совместного планирования покупок."
+        - **Media Processor:** Асинхронный сервис для обработки файлов. Принимает загрузки по HTTP, ставит задачу в очередь `RabbitMQ`, обрабатывает ее в фоновом worker'е и уведомляет пользователя о результате через Chat Service.
+        
+        Инфраструктура и DevOps: `PostgreSQL`, `RabbitMQ`, `MinIO` полностью контейнеризированы с помощью `Docker` и `Docker Compose`.
+        Observability: метрики собираются с помощью `Prometheus`, распределенные трассировки — через `OpenTelemetry` и визуализируются в **Jaeger**.
+        
+    - name: **- Packet - Full Stack Планировщик покупок (Android)**
+      organization: ""
       credentialurl: "https://github.com/Kovalyovv/packet-backend"
       credentialname: "Backend GitHub"
       details: |
-        Разработал Kotlin-бэкенд и участвовал в создании Android-приложения:
-        - **Backend:** Реализовал REST API и WebSocket-сервер на **Ktor**, используя **Exposed** ORM для работы с PostgreSQL.
-        - **Frontend:** На клиенте (Kotlin, Jetpack Compose) интегрировал **Google ML Kit** для распознавания текста на QR-кодах чеков. Дополнительная ссылка на **Frontend:** [PacketApp](https://github.com/Kovalyovv/PacketApp)
+        **Android-приложение и Kotlin-бэкенд для совместного планирования покупок.**
+        Разработал `Kotlin`-бэкенд и участвовал в создании Android-приложения:
+        - **Backend:** Реализовал REST API и WebSocket-сервер на `Ktor`, используя `Exposed` ORM для работы с PostgreSQL.
+    
+    - name: **- Packet - Frontend Планировщик покупок**
+      organization: ""
+      credentialurl: "https://github.com/Kovalyovv/PacketApp"
+      credentialname: "Frontend GitHub"
+      details: |
+        - **Frontend:** На клиенте (Kotlin, Jetpack Compose) интегрировал `Google ML Kit` для распознавания текста на QR-кодах чеков. Дополнительная ссылка на `Frontend:` [PacketApp](https://github.com/Kovalyovv/PacketApp)
 
-    - name: YandexMusicDownloader - Telegram Bot
+    - name: **- YandexMusicDownloader - Telegram Bot**
       organization: "Telegram-бот на Python для скачивания треков и плейлистов с аккаунта Яндекс.Музыки."
       details: |
         Разработал бота с использованием `aiogram` и FSM для управления диалогами. Бот парсил библиотеку пользователя, скачивал треки через неофициальное API и отправлял их в чат. Для хранения данных использовал PostgreSQL.
@@ -99,19 +106,19 @@ skills:
     - name: Go
       level: 95%
     - name: C++ (userver, STL)
-      level: 85%
+      level: 95%
     - name: Python (pytest, aiogram)
       level: 90%
     - name: PostgreSQL
       level: 95%
     - name: Docker & Docker Compose
-      level: 98%
-    - name: Microservice Patterns (gRPC, RabbitMQ, REST)
-      level: 95%
-    - name: Observability (Prometheus, Jaeger, OpenTelemetry)
       level: 90%
+    - name: Microservice Patterns (gRPC, RabbitMQ, REST)
+      level: 90%
+    - name: Observability (Prometheus, Jaeger, OpenTelemetry)
+      level: 85%
     - name: Git & Linux
-      level: 98%
+      level: 85%
 
 footer: >
   Dmitry Kovalev Resume
