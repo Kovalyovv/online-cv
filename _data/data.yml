@@ -79,7 +79,7 @@ certifications:
         - **Инфраструктура и DevOps:** Вся система и ее зависимости (`PostgreSQL`, `RabbitMQ`, `MinIO`) полностью контейнеризированы с помощью `Docker` и `Docker Compose`.
         - **Observability:** Реализован полный стек наблюдаемости: метрики (`Prometheus`), распределенные трассировки (`OpenTelemetry` + `Jaeger`).
 
-    - name: "Packet" - Full Stack Планировщик покупок (Android)
+    - name: `Packet` - Full Stack Планировщик покупок (Android)
       organization: "Android-приложение и Kotlin-бэкенд для совместного планирования покупок."
       credentialurl: "https://github.com/Kovalyovv/packet-backend"
       credentialname: "Backend GitHub"
