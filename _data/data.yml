@@ -69,9 +69,8 @@ certifications:
   list:
     - name: Распределенная чат-система (Go Microservices)
       organization: | 
-        Экосистема из трех микросервисов с `WebSocket` чатом,
-        асинхронной обработкой файлов и полной наблюдаемостью.
-      credentialurl: "https://github.com/Kovalyovv/chat-app" # Assuming this is the main repo for the system
+        WebSocket-чат, асинхронная обработка файлов и мониторинг.
+      credentialurl: "https://github.com/Kovalyovv/chat-app"
       credentialname: "GitHub"
       details: |
         Спроектировал и реализовал комплексную систему, состоящую из независимых, но взаимосвязанных сервисов:
@@ -82,7 +81,7 @@ certifications:
         Полный стек наблюдаемости: метрики (`Prometheus`), распределенные трассировки (`OpenTelemetry` + `Jaeger`).
 
     - name: Packet - Full Stack Планировщик покупок (Android)
-      organization: "Android-приложение и Kotlin-бэкенд для совместного планирования покупок."
+      organization: "Kotlin-бэкенд для совместного планирования покупок."
       credentialurl: "https://github.com/Kovalyovv/packet-backend"
       credentialname: "Backend GitHub"
       details: |
@@ -90,6 +89,11 @@ certifications:
         - **Backend:** Реализовал REST API и WebSocket-сервер на `Ktor`, используя `Exposed` ORM для работы с PostgreSQL.
         - **Frontend:** На клиенте (Kotlin, Jetpack Compose) интегрировал `Google ML Kit` для распознавания текста на QR-кодах чеков. Ссылка на **Frontend:** [PacketApp](https://github.com/Kovalyovv/PacketApp).
 
+    - name: Course Hunter
+      organization: "Поиск, добавление и просмотр онлайн курсов"
+      credentialurl: ""
+      credentialname: ""
+    
     - name: YandexMusicDownloader - Telegram Bot
       organization: "Telegram-бот для скачивания треков и плейлистов с аккаунта Яндекс.Музыки."
       credentialurl: "https://t.me/YandexMusicSave_bot"
