@@ -67,7 +67,7 @@ experiences:
 certifications:
   title: Проектная деятельность # The title displayed on the page will be "Проекты"
   list:
-    - name: "- Распределенная чат-система (Go Microservices)"
+    - name: - Распределенная чат-система (Go Microservices)
       organization: ""
       credentialurl: "https://github.com/Kovalyovv/chat-app"
       credentialname: "GitHub"
