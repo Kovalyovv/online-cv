@@ -64,7 +64,7 @@ experiences:
         - Писал интеграционные и функциональные тесты на Python (`pytest`, `testsuite`), обеспечивая надежность и стабильность кода.
         - Работал с PostgreSQL для хранения и извлечения логистических данных.
 
-projects:
+experiences:
   title: Проекты
   info:
     - role: Распределенная чат-система (Go Microservices)
