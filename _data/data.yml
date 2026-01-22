@@ -79,9 +79,10 @@ certifications:
         - **Media Processor:** Асинхронный сервис для обработки файлов с использованием очереди `RabbitMQ` и фонового worker'а.
         
         Инфраструктура и DevOps: Вся система и ее зависимости (`PostgreSQL`, `RabbitMQ`, `MinIO`) полностью контейнеризированы с помощью `Docker` и `Docker Compose`.
+        
         Полный стек наблюдаемости: метрики (`Prometheus`), распределенные трассировки (`OpenTelemetry` + `Jaeger`).
 
-    - name: Packet - Full Stack Планировщик покупок (Android)
+    - name: ◀️Packet - Full Stack Планировщик покупок (Android)
       organization: "Kotlin-бэкенд для совместного планирования покупок."
       credentialurl: "https://github.com/Kovalyovv/packet-backend"
       credentialname: "Backend GitHub"
