@@ -67,7 +67,7 @@ experiences:
 certifications:
   title: Проектная деятельность # The title displayed on the page will be "Проекты"
   list:
-    - name: **- Распределенная чат-система (Go Microservices)**
+    - name: "**- Распределенная чат-система (Go Microservices)**"
       organization: ""
       credentialurl: "https://github.com/Kovalyovv/chat-app"
       credentialname: "GitHub"
@@ -80,7 +80,7 @@ certifications:
         Инфраструктура и DevOps: `PostgreSQL`, `RabbitMQ`, `MinIO` полностью контейнеризированы с помощью `Docker` и `Docker Compose`.
         Observability: метрики собираются с помощью `Prometheus`, распределенные трассировки — через `OpenTelemetry` и визуализируются в **Jaeger**.
         
-    - name: **- Packet - Full Stack Планировщик покупок (Android)**
+    - name: "**- Packet - Full Stack Планировщик покупок (Android)**"
       organization: ""
       credentialurl: "https://github.com/Kovalyovv/packet-backend"
       credentialname: "Backend GitHub"
@@ -89,14 +89,14 @@ certifications:
         Разработал `Kotlin`-бэкенд и участвовал в создании Android-приложения:
         - **Backend:** Реализовал REST API и WebSocket-сервер на `Ktor`, используя `Exposed` ORM для работы с PostgreSQL.
     
-    - name: **- Packet - Frontend Планировщик покупок**
+    - name: "**- Packet - Frontend Планировщик покупок**"
       organization: ""
       credentialurl: "https://github.com/Kovalyovv/PacketApp"
       credentialname: "Frontend GitHub"
       details: |
         - **Frontend:** На клиенте (Kotlin, Jetpack Compose) интегрировал `Google ML Kit` для распознавания текста на QR-кодах чеков. Дополнительная ссылка на `Frontend:` [PacketApp](https://github.com/Kovalyovv/PacketApp)
 
-    - name: **- YandexMusicDownloader - Telegram Bot**
+    - name: "**- YandexMusicDownloader - Telegram Bot**"
       organization: "Telegram-бот на Python для скачивания треков и плейлистов с аккаунта Яндекс.Музыки."
       details: |
         Разработал бота с использованием `aiogram` и FSM для управления диалогами. Бот парсил библиотеку пользователя, скачивал треки через неофициальное API и отправлял их в чат. Для хранения данных использовал PostgreSQL.
