@@ -85,7 +85,7 @@ projects:
       link: "https://github.com/Kovalyovv/packet-backend"
       tagline: "Android-приложение и бэкенд для совместного планирования покупок. **Frontend:** [PacketApp](https://github.com/Kovalyovv/PacketApp)"
       details: |
-        Разработал Kotlin-бэкенд и участвовал в создании Android-приложения:
+        Разработал Kotlin-бэкенд сервис и клиент Android-приложения:
         - **Backend:** Реализовал REST API и WebSocket-сервер на **Ktor**, используя **Exposed** ORM для работы с PostgreSQL. Спроектировал базу данных для хранения списков покупок, группового доступа и чатов.
         - **Frontend:** На клиенте (Kotlin, Jetpack Compose) интегрировал **Google ML Kit** для распознавания текста на QR-кодах чеков, автоматизируя добавление товаров.
 
@@ -112,20 +112,20 @@ publications:
         - **Observability:** Реализован полный стек наблюдаемости: метрики собираются с помощью **Prometheus**, распределенные трассировки — через **OpenTelemetry** и визуализируются в **Jaeger**.
         - **Стек:** *Go, PostgreSQL, Docker, Docker Compose, gRPC, WebSockets, RabbitMQ, MinIO (S3 API), Prometheus, OpenTelemetry, Jaeger, Gin.*
 
-    - title: "Packet - Full Stack Планировщик покупок (Android)"
+    - title: Packet - Full Stack Планировщик покупок (Android)
       link: "https://github.com/Kovalyovv/packet-backend"
       authors: "Android-приложение и бэкенд для совместного планирования покупок. **Frontend:** [PacketApp](https://github.com/Kovalyovv/PacketApp)"
       conference: |
-        Разработал Kotlin-бэкенд и участвовал в создании Android-приложения:
+        Разработал Kotlin-бэкенд сервис и клиент Android-приложения:
         - **Backend:** Реализовал REST API и WebSocket-сервер на **Ktor**, используя **Exposed** ORM для работы с PostgreSQL. Спроектировал базу данных для хранения списков покупок, группового доступа и чатов.
         
-    - title: "Packet - Frontend"
+    - title: Packet - Frontend
       link: "https://github.com/Kovalyovv/PacketApp"
       authors: "Мобильное приложение-клиент для Android приложения по планированию и анализу покупок."
-       conference: |
+      conference: |
          - **Frontend:** На клиенте (Kotlin, Jetpack Compose) интегрировал **Google ML Kit** для распознавания текста на QR-кодах чеков, автоматизируя добавление товаров.
 
-    - title: "YandexMusicDownloader - Telegram Bot"
+    - title: YandexMusicDownloader - Telegram Bot
       link: "" # Add link if you have one
       authors: "Telegram-бот на Python для скачивания треков и плейлистов с аккаунта Яндекс.Музыки."
       conference: |
