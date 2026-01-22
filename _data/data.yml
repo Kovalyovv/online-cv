@@ -81,7 +81,7 @@ projects:
         - **Observability:** Реализован полный стек наблюдаемости: метрики собираются с помощью **Prometheus**, распределенные трассировки — через **OpenTelemetry** и визуализируются в **Jaeger**.
         - **Стек:** *Go, PostgreSQL, Docker, Docker Compose, gRPC, WebSockets, RabbitMQ, MinIO (S3 API), Prometheus, OpenTelemetry, Jaeger, Gin.*
 
-    - title: "Packet" - Full Stack Планировщик покупок (Android)
+    - title: "Packet - Full Stack Планировщик покупок (Android)"
       link: "https://github.com/Kovalyovv/packet-backend"
       tagline: "Android-приложение и бэкенд для совместного планирования покупок. **Frontend:** [PacketApp](https://github.com/Kovalyovv/PacketApp)"
       details: |
