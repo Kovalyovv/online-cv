@@ -3,284 +3,116 @@
 #
 
 sidebar:
-  position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+  position: left
+  about: False
+  education: True
 
   # Profile information
-  name: Alan Doe
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  name: Дмитрий Ковалев
+  tagline: Software Engineer (Backend & Distributed Systems)
+  avatar: profile.png
 
   # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
-  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
-  citizenship:
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  email: dmitriykovalyov2003@mail.ru
+  phone: +7-951-152-7931
+  timezone: Europe/Moscow
+  sity: Белгород
+  citizenship: Российская Федерация
+  github: https://github.com/Kovalyovv
+  telegram: https://t.me/kovalyovdmitriy
 
   languages:
-    title: Languages
+    title: Языки
     info:
-    - idiom: English
-      level: Native
-
-    - idiom: French
-      level: Professional
-
-    - idiom: Spanish
-      level: Professional
-
-  interests:
-    title: Interests
-    info:
-    - item: Climbing
-      link:
-
-
-    - item: Snowboarding
-      link:
-
-
-    - item: Cooking
-      link:
-
+      - idiom: Русский
+        level: Родной
+      - idiom: Английский
+        level: Upper-Intermediate (B2)
 
 career-profile:
-  title: Career Profile
+  title: Профиль
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Бэкенд-разработчик с опытом проектирования и создания распределенных систем и микросервисной архитектуры. Уверенно владею Go, C++ и Python. Обладаю практическим опытом работы с PostgreSQL, Docker, RabbitMQ, gRPC и современными инструментами observability (Prometheus, Jaeger, OpenTelemetry). Увлечен созданием надежных, масштабируемых и наблюдаемых бэкенд-решений.
+
 education:
-  title: Education
+  title: Образование
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+    - degree: Магистр, Информационные системы и технологии
+      university: Белгородский государственный университет
+      time: 2025 - 2027 (в процессе)
+    - degree: Бакалавр, Программная инженерия
+      university: БГТУ им. В. Г. Шухова
+      time: 2021 - 2025
 
 experiences:
-  title: Experiences
+  title: Опыт работы
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-
-certifications:
-  title: Certifications
-  list:
-  - name: CV Builder
-    start: 2020
-    end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
-    details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
-    details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
+    - role: Стажер-разработчик
+      time: август 2025 – ноябрь 2025
+      company: Yandex, Платформа логистики
+      details: |
+        Участвовал в разработке и поддержке компонентов высоконагруженной логистической платформы для сервиса Яндекс Доставка.
+        - Разрабатывал и оптимизировал сервисные модули на C++ с использованием фреймворка `userver`.
+        - Создавал эндпоинты для новой фичи личного кабинета Доставки, разрабатывал бизнес-логику сбора данных с нескольких модулей.
+        - Писал интеграционные и функциональные тесты на Python (`testsuite`), обеспечивая надежность и стабильность кода.
+        - Настраивал работу очереди событий (ProcaaS) между сервисами для новых фичей.
+        - Работал с PostgreSQL для хранения и извлечения логистических данных.
 
 projects:
-  title: Projects
+  title: Проекты
   intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    Ключевые личные проекты, демонстрирующие навыки в проектировании и реализации современных бэкенд-систем.
   assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
+    - title: Распределенная чат-система (Go Microservices)
+      link: "https://github.com/Kovalyovv/chat-app" 
+      tagline: "Экосистема из трех микросервисов, реализующая чат в реальном времени с асинхронной обработкой файлов и полной наблюдаемостью."
+      details: |
+        Спроектировал и реализовал комплексную систему, состоящую из независимых, но взаимосвязанных сервисов:
+        - **Auth Service:** Сервис аутентификации, предоставляющий REST API для регистрации/входа и gRPC-интерфейс для валидации JWT (Access/Refresh) токенов другими сервисами.
+        - **Chat Service:** Ядро системы, управляющее чат-комнатами, членством и историей сообщений. Реализует WebSocket-сервер для real-time коммуникации с клиентами.
+        - **Media Processor:** Асинхронный сервис для обработки файлов. Принимает загрузки по HTTP, ставит задачу в очередь **RabbitMQ**, обрабатывает ее в фоновом worker'е и уведомляет пользователя о результате через Chat Service.
+        - **Инфраструктура и DevOps:** Вся система и ее зависимости (PostgreSQL, RabbitMQ, MinIO) полностью контейнеризированы с помощью **Docker** и управляются через **Docker Compose**.
+        - **Observability:** Реализован полный стек наблюдаемости: метрики собираются с помощью **Prometheus**, распределенные трассировки — через **OpenTelemetry** и визуализируются в **Jaeger**.
+        - **Стек:** *Go, PostgreSQL, Docker, Docker Compose, gRPC, WebSockets, RabbitMQ, MinIO (S3 API), Prometheus, OpenTelemetry, Jaeger, Gin.*
 
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
+    - title: "Packet" - **Full Stack** Планировщик и анализатор покупок (Android)
+      link: "https://github.com/Kovalyovv/packet-backend" 
+      link: "https://github.com/Kovalyovv/PacketApp" 
+      tagline: "Мобильное приложение для совместного планирования покупок со сканированием чеков и чатом в реальном времени."
+      details: |
+        Разработал бэкенд-сервис для мобильного приложения:
+        - Реализовал REST API и WebSocket-сервер на **Ktor (Kotlin)**, используя **Exposed** ORM для работы с PostgreSQL.
+        - Спроектировал базу данных для хранения списков покупок, группового доступа и истории чатов.
+        - На фронтенде (Kotlin, Jetpack Compose) была интегрирована библиотека **Google ML Kit** для распознавания текста на QR-кодах чеков.
 
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-publications:
-  title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
-  papers:
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
-
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
-
-recommendations:
-  title: Recommendations
-  list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      I would like to work with Alan Doe again!
-
-      He is a great employee!
+    - title: YandexMusicDownloader - Telegram Bot
+      link: "" 
+      tagline: "Telegram-бот на Python для скачивания треков и плейлистов с аккаунта Яндекс.Музыки."
+      details: |
+        Разработал бота с использованием `aiogram`, реализуя диалоги и пагинацию через FSM (Finite State Machine) и inline-кнопки.
+        Парсил страницу личной библиотеки ЯМ, потом с помошью API скачивал треки и передавал в ТГ-бота юзеру. Разработал поддержку альбомов и плейлистов. Использовал PostgreSQL для хранения данных.
 
 skills:
-  title: Skills &amp; Proficiency
-
+  title: Технические навыки
   toolset:
-  - name: Python & Django
-    level: 98%
+    - name: Языки программирования
+      level: Go, C++, Python, Kotlin, SQL
+    - name: Бэкенд и Микросервисы
+      level: Microservice Architecture, gRPC, userver, REST API, WebSockets, Gin, Ktor
+    - name: Базы данных
+      level: PostgreSQL, Exposed ORM
+    - name: DevOps и Инфраструктура
+      level: Docker, Docker Compose, RabbitMQ, MinIO (S3 API), Prometheus, OpenTelemetry, Jaeger
+    - name: Инструменты
+      level: Git, Linux, Bash
 
-  - name: Javascript & jQuery
-    level: 98%
-
-  - name: Angular
-    level: 98%
-
-  - name: HTML5 & CSS
-    level: 95%
-
-  - name: Ruby on Rails
-    level: 85%
-
-  - name: Sketch & Photoshop
-    level: 60%
+interests:
+    title: Профессиональные интересы
+    info:
+      - item: Микросервисная архитектура
+      - item: Высоконагруженные и отказоустойчивые системы
+      - item: Алгоритмы и структуры данных
+      - item: Оптимизация производительности
 
 footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  Dmitry Kovalev Resume
