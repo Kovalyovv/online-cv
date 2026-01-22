@@ -9,17 +9,16 @@ sidebar:
 
   # Profile information
   name: Дмитрий Ковалев
-  tagline: Software Engineer (Backend & Distributed Systems)
+  tagline: Backend Software Engineer (Go & Distributed Systems)
   avatar: profile.png
 
   # Sidebar links
   email: dmitriykovalyov2003@mail.ru
-  phone: +7-951-152-7931
+  phone: "+7 951 152 7931" # Enclose phone number in quotes
   timezone: Europe/Moscow
-  sity: Белгород
-  citizenship: Российская Федерация
-  github: https://github.com/Kovalyovv
-  telegram: https://t.me/kovalyovdmitriy
+  website: "https://github.com/Kovalyovv" # Use the website field for the main profile link
+  github: Kovalyovv
+  telegram: kovalyovdmitriy # Nickname without the URL part
 
   languages:
     title: Языки
@@ -29,19 +28,27 @@ sidebar:
       - idiom: Английский
         level: Upper-Intermediate (B2)
 
+  interests:
+    title: Профессиональные интересы
+    info:
+      - item: Микросервисная архитектура
+      - item: Высоконагруженные системы
+      - item: Алгоритмы и структуры данных
+      - item: Оптимизация производительности
+
 career-profile:
   title: Профиль
   summary: |
-    Бэкенд-разработчик с опытом проектирования и создания распределенных систем и микросервисной архитектуры. Уверенно владею Go, C++ и Python. Обладаю практическим опытом работы с PostgreSQL, Docker, RabbitMQ, gRPC и современными инструментами observability (Prometheus, Jaeger, OpenTelemetry). Увлечен созданием надежных, масштабируемых и наблюдаемых бэкенд-решений.
+    Бэкенд-разработчик с опытом проектирования и создания распределенных систем. Специализируюсь на Go, C++ и Python. Обладаю практическим опытом работы с PostgreSQL, Docker, RabbitMQ, gRPC и современными инструментами observability (Prometheus, Jaeger, OpenTelemetry). Увлечен созданием надежных, масштабируемых и наблюдаемых бэкенд-решений.
 
 education:
   title: Образование
   info:
     - degree: Магистр, Информационные системы и технологии
-      university: Белгородский государственный университет
+      university: Белгородский государственный университет, Белгород
       time: 2025 - 2027 (в процессе)
     - degree: Бакалавр, Программная инженерия
-      university: БГТУ им. В. Г. Шухова
+      university: БГТУ им. В. Г. Шухова, Белгород
       time: 2021 - 2025
 
 experiences:
@@ -49,13 +56,12 @@ experiences:
   info:
     - role: Стажер-разработчик
       time: август 2025 – ноябрь 2025
-      company: Yandex, Платформа логистики
+      company: Яндекс, Доставка, Платформа логистики
       details: |
         Участвовал в разработке и поддержке компонентов высоконагруженной логистической платформы для сервиса Яндекс Доставка.
-        - Разрабатывал и оптимизировал сервисные модули на C++ с использованием фреймворка `userver`.
-        - Создавал эндпоинты для новой фичи личного кабинета Доставки, разрабатывал бизнес-логику сбора данных с нескольких модулей.
-        - Писал интеграционные и функциональные тесты на Python (`testsuite`), обеспечивая надежность и стабильность кода.
-        - Настраивал работу очереди событий (ProcaaS) между сервисами для новых фичей.
+        - Разрабатывал бэкенд-логику на C++ (`userver`) для новых функций личного кабинета, собирая данные из нескольких внутренних сервисов.
+        - Настраивал асинхронное взаимодействие между сервисами через внутреннюю систему очередей событий (ProcaaS).
+        - Писал интеграционные и функциональные тесты на Python (`pytest`, `testsuite`), обеспечивая надежность и стабильность кода.
         - Работал с PostgreSQL для хранения и извлечения логистических данных.
 
 projects:
@@ -64,54 +70,50 @@ projects:
     Ключевые личные проекты, демонстрирующие навыки в проектировании и реализации современных бэкенд-систем.
   assignments:
     - title: Распределенная чат-система (Go Microservices)
-      link: "https://github.com/Kovalyovv/chat-app" 
+      link: "https://github.com/Kovalyovv/chat-app"
       tagline: "Экосистема из трех микросервисов, реализующая чат в реальном времени с асинхронной обработкой файлов и полной наблюдаемостью."
       details: |
         Спроектировал и реализовал комплексную систему, состоящую из независимых, но взаимосвязанных сервисов:
-        - **Auth Service:** Сервис аутентификации, предоставляющий REST API для регистрации/входа и gRPC-интерфейс для валидации JWT (Access/Refresh) токенов другими сервисами.
-        - **Chat Service:** Ядро системы, управляющее чат-комнатами, членством и историей сообщений. Реализует WebSocket-сервер для real-time коммуникации с клиентами.
+        - **Auth Service:** Сервис аутентификации (REST API + gRPC) для управления пользователями и валидации JWT (Access/Refresh) токенов.
+        - **Chat Service:** Ядро системы, управляющее чат-комнатами и историей сообщений через WebSocket-сервер для real-time коммуникации.
         - **Media Processor:** Асинхронный сервис для обработки файлов. Принимает загрузки по HTTP, ставит задачу в очередь **RabbitMQ**, обрабатывает ее в фоновом worker'е и уведомляет пользователя о результате через Chat Service.
         - **Инфраструктура и DevOps:** Вся система и ее зависимости (PostgreSQL, RabbitMQ, MinIO) полностью контейнеризированы с помощью **Docker** и управляются через **Docker Compose**.
         - **Observability:** Реализован полный стек наблюдаемости: метрики собираются с помощью **Prometheus**, распределенные трассировки — через **OpenTelemetry** и визуализируются в **Jaeger**.
         - **Стек:** *Go, PostgreSQL, Docker, Docker Compose, gRPC, WebSockets, RabbitMQ, MinIO (S3 API), Prometheus, OpenTelemetry, Jaeger, Gin.*
 
-    - title: "Packet - Full Stack Планировщик и анализатор покупок (Android)"
-      link: "https://github.com/Kovalyovv/packet-backend" 
+    - title: "Packet" - Full Stack Планировщик покупок (Android)
+      link: "https://github.com/Kovalyovv/packet-backend"
       tagline: "Android-приложение и бэкенд для совместного планирования покупок. **Frontend:** [PacketApp](https://github.com/Kovalyovv/PacketApp)"
       details: |
-        Разработал бэкенд-сервис для мобильного приложения:
-        - Реализовал REST API и WebSocket-сервер на **Ktor (Kotlin)**, используя **Exposed** ORM для работы с PostgreSQL.
-        - Спроектировал базу данных для хранения списков покупок, группового доступа и истории чатов.
-        - На фронтенде (Kotlin, Jetpack Compose) была интегрирована библиотека **Google ML Kit** для распознавания текста на QR-кодах чеков.
+        Разработал Kotlin-бэкенд и участвовал в создании Android-приложения:
+        - **Backend:** Реализовал REST API и WebSocket-сервер на **Ktor**, используя **Exposed** ORM для работы с PostgreSQL. Спроектировал базу данных для хранения списков покупок, группового доступа и чатов.
+        - **Frontend:** На клиенте (Kotlin, Jetpack Compose) интегрировал **Google ML Kit** для распознавания текста на QR-кодах чеков, автоматизируя добавление товаров.
 
     - title: YandexMusicDownloader - Telegram Bot
-      link: "" 
+      link: "" # Add link if you have one
       tagline: "Telegram-бот на Python для скачивания треков и плейлистов с аккаунта Яндекс.Музыки."
       details: |
-        Разработал бота с использованием `aiogram`, реализуя диалоги и пагинацию через FSM (Finite State Machine) и inline-кнопки.
-        Парсил страницу личной библиотеки ЯМ, потом с помошью API скачивал треки и передавал в ТГ-бота юзеру. Разработал поддержку альбомов и плейлистов. Использовал PostgreSQL для хранения данных.
+        Разработал бота с использованием `aiogram`, реализуя диалоги через FSM (Finite State Machine). Бот парсил библиотеку пользователя, скачивал треки/плейлисты через неофициальное API и отправлял их в чат. Для хранения данных использовал PostgreSQL.
 
 skills:
   title: Технические навыки
   toolset:
-    - name: Языки программирования
-      level: Go, C++, Python, Kotlin, SQL
-    - name: Бэкенд и Микросервисы
-      level: Microservice Architecture, gRPC, userver, REST API, WebSockets, Gin, Ktor
-    - name: Базы данных
-      level: PostgreSQL, Exposed ORM
-    - name: DevOps и Инфраструктура
-      level: Docker, Docker Compose, RabbitMQ, MinIO (S3 API), Prometheus, OpenTelemetry, Jaeger
-    - name: Инструменты
-      level: Git, Linux, Bash
-
-interests:
-    title: Профессиональные интересы
-    info:
-      - item: Микросервисная архитектура
-      - item: Высоконагруженные и отказоустойчивые системы
-      - item: Алгоритмы и структуры данных
-      - item: Оптимизация производительности
+    - name: Go
+      level: 95%
+    - name: C++ (userver, STL)
+      level: 85%
+    - name: Python (pytest, aiogram)
+      level: 90%
+    - name: PostgreSQL
+      level: 95%
+    - name: Docker & Docker Compose
+      level: 98%
+    - name: Microservice Patterns (gRPC, RabbitMQ, REST)
+      level: 95%
+    - name: Observability (Prometheus, Jaeger, OpenTelemetry)
+      level: 90%
+    - name: Git & Linux
+      level: 98%
 
 footer: >
   Dmitry Kovalev Resume
