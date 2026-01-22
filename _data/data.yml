@@ -66,37 +66,6 @@ experiences:
 
 projects:
   title: Проекты
-  intro: >
-    Ключевые личные проекты, демонстрирующие навыки в проектировании и реализации современных бэкенд-систем.
-  assignments:
-    - title: Распределенная чат-система (Go Microservices)
-      link: "https://github.com/Kovalyovv/chat-app"
-      tagline: "Экосистема из трех микросервисов, реализующая чат в реальном времени с асинхронной обработкой файлов и полной наблюдаемостью."
-      details: |
-        Спроектировал и реализовал комплексную систему, состоящую из независимых, но взаимосвязанных сервисов:
-        - **Auth Service:** Сервис аутентификации (REST API + gRPC) для управления пользователями и валидации JWT (Access/Refresh) токенов.
-        - **Chat Service:** Ядро системы, управляющее чат-комнатами и историей сообщений через WebSocket-сервер для real-time коммуникации.
-        - **Media Processor:** Асинхронный сервис для обработки файлов. Принимает загрузки по HTTP, ставит задачу в очередь **RabbitMQ**, обрабатывает ее в фоновом worker'е и уведомляет пользователя о результате через Chat Service.
-        - **Инфраструктура и DevOps:** Вся система и ее зависимости (PostgreSQL, RabbitMQ, MinIO) полностью контейнеризированы с помощью **Docker** и управляются через **Docker Compose**.
-        - **Observability:** Реализован полный стек наблюдаемости: метрики собираются с помощью **Prometheus**, распределенные трассировки — через **OpenTelemetry** и визуализируются в **Jaeger**.
-        - **Стек:** *Go, PostgreSQL, Docker, Docker Compose, gRPC, WebSockets, RabbitMQ, MinIO (S3 API), Prometheus, OpenTelemetry, Jaeger, Gin.*
-
-    - title: "Packet - Full Stack Планировщик покупок (Android)"
-      link: "https://github.com/Kovalyovv/packet-backend"
-      tagline: "Android-приложение и бэкенд для совместного планирования покупок. **Frontend:** [PacketApp](https://github.com/Kovalyovv/PacketApp)"
-      details: |
-        Разработал Kotlin-бэкенд сервис и клиент Android-приложения:
-        - **Backend:** Реализовал REST API и WebSocket-сервер на **Ktor**, используя **Exposed** ORM для работы с PostgreSQL. Спроектировал базу данных для хранения списков покупок, группового доступа и чатов.
-        - **Frontend:** На клиенте (Kotlin, Jetpack Compose) интегрировал **Google ML Kit** для распознавания текста на QR-кодах чеков, автоматизируя добавление товаров.
-
-    - title: YandexMusicDownloader - Telegram Bot
-      link: "" # Add link if you have one
-      tagline: "Telegram-бот на Python для скачивания треков и плейлистов с аккаунта Яндекс.Музыки."
-      details: |
-        Разработал бота с использованием `aiogram`, реализуя диалоги через FSM (Finite State Machine). Бот парсил библиотеку пользователя, скачивал треки/плейлисты через неофициальное API и отправлял их в чат. Для хранения данных использовал PostgreSQL.
-
-projects:
-  title: Проекты
   info:
     - role: Распределенная чат-система (Go Microservices)
       company: "Экосистема из трех микросервисов с real-time чатом, асинхронной обработкой файлов и полной наблюдаемостью."
